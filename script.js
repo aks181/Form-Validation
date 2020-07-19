@@ -86,9 +86,8 @@ mobno.addEventListener('input', onlyNumberInput) ;
 form.addEventListener('submit', function(event){
     event.preventDefault(); //prevents default behaviour of submit
     
-    if(username.value === "" || email.value === "" || mobno.value === "" || password.value === "" || password2.value === "" ) {
+    
         checkRequired([username,email,mobno,password,password2]);
-    } 
         checkLength(username,3,20);  
         isValidEmail(email);
         isValidNumber(mobno);
