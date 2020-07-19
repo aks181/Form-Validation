@@ -4,7 +4,7 @@ const email = document.getElementById('email');
 const mobno = document.getElementById('Mobile Number');
 const password = document.getElementById('password');
 const password2 = document.getElementById('Confirm Password');
-
+const reset = document.querySelector('.reset');
 //show Error outline and message
 function showError(input, message) {
     const formControl = input.parentElement;
@@ -95,4 +95,8 @@ form.addEventListener('submit', function(event){
         checkLength(password,6,25);  
         checkPasswordMatch(password,password2);
     
+});
+
+reset.addEventListener('click', function() {
+    location.reload();
 });
