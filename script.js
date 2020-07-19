@@ -93,6 +93,7 @@ form.addEventListener('submit', function(event){
         isValidEmail(email);
         isValidNumber(mobno);
         checkLength(password,6,25);  
+        checkLength(password2,6,25);
         checkPasswordMatch(password,password2);
     
 });
